@@ -1,13 +1,137 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(153,0,255,1) 100%);
+    background-color: #64B6FF;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
 }
 
-#greeting-container {
-  margin-top: 20px;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.clr {
+    clear: both;
+}
+
+#navbar { 
+    background-color: #018abd;
+    color: white;
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18;
+    padding-right: 50px;
+    letter-spacing: 2px;
+}
+
+#navbar a:hover {
+    color: #64B6FF;
+}
+
+#Welcome {
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#Welcome h1 {
+    font-size: 40px;
+    line-height: 1em;
+    letter-spacing: 2px;  
+}
+
+#Welcome h2 {
+    font-size: 30px;
+    line-height: 1em;
+    letter-spacing: 1px;  
+}
+
+#About-photo {
+    float: left;
+    width: 40%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+#About-photo img {
+    height: 400px;
+    width: 300px;
+    position: relative;
+}
+
+#About-info{
+    float: right;
+    width: 60%;
+    background-color: #018abd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1200px) {
+    #About-photo {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    #About-info {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}
+
+#contacts-footer { 
+    background-color: #018abd;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 0px;
+}
+
+#contacts-footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    
+}
+
+#contacts-footer li {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+#contacts-footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    padding-right: 50px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+button {
+    text-decoration: none;
+    color: #d5a736;
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
