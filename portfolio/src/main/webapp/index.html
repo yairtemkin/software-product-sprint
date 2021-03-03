@@ -4,16 +4,75 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#Welcome">Welcome</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#showcase-projects">Projects</a></li>
+                    <li><a href="#trivia">Trivia</a></li>
+                    <li><a href="#contacts-footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="Welcome">
+            <div class="container">
+                <h1>Welcome to my Portfolio!</h1>
+                    <div class= "giffy">
+                        <img src="images/ponyo.gif">
+                    </div>
+                <h2>Please look around</h2>
+            </div>
+        </section>
+        <div class="container" id="About">
+            <section id="About-photo">
+                <img src="images/myself.jpg">
+            </section>
+            <section id="About-info">
+                <h1>Hi there! My name is Yair Temkin</h1>
+                <p>I am a sophomore computer Science student studying at the 
+                    University of Florida (Go Gators!). <br>In my free time I love to code, read
+                    watch movies and binge-watch youtube videos!
+                </p>
+            </section>
+        </div>
+        <div class="container">
+            <section id="showcase-projects">
+                <h1>Projects: Coming soon</h1>
+            </section>
+            <section id="scrollbar">
+
+            </section>
+        </div>
+        <div class="container">
+            <section id="trivia">
+                <p>Dont click here to get a random message:</p>
+                <button >Seriously I dont do anything</button>
+                
+                <p>Click here to get a random message:</p>
+                <button onclick="addRandomGreeting()">Hello</button>
+                
+            </section>
+            <section id="trivia-answers">
+                <div id="greeting-container"></div>
+            </section>
+        </div>
+        <footer id="contacts-footer">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/yair-temkin/" 
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/yairtemkin"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/yayayaya.yair/"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </footer>
+    </body>
 </html>
