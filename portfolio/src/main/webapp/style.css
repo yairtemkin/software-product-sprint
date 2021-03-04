@@ -3,7 +3,7 @@
 body {
     background-color: #64B6FF;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
     font-size: 16px;
     line-height: 1.6em;
     margin: 0;
@@ -61,7 +61,17 @@ body {
 #Welcome h2 {
     font-size: 30px;
     line-height: 1em;
-    letter-spacing: 1px;  
+    letter-spacing: 1px;
+    display: inline-block;   
+}
+
+.giffy {
+    width: 100%;
+    height: 400px;
+    background-image: url('images/ponyo.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 #About-photo {
@@ -81,10 +91,18 @@ body {
     float: right;
     width: 60%;
     background-color: #018abd;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 20px;
+    box-sizing: border-box; 
 }
 
+#About-info h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#About-info p {
+    display: inline-block
+}
 @media(max-width: 1200px) {
     #About-photo {
         width: 100%;
@@ -95,8 +113,119 @@ body {
     #About-info {
         width: 100%;
         float: none;
+    }
+    .giffy {
+        width: 100%;
+    }
+    #projects {
+        float:none;
+        text-align: center;
+        display:inline-block;
+    }
+    h1{
         text-align: center;
     }
+}
+
+#projects {
+    text-align: center;
+    display: inline-flex;
+    padding-left: 100px;
+}
+
+.project-info {
+    width: 500px;
+    height: 400px;
+    background-color: #018abd;
+    margin: 0px 20px;
+    float: left;
+}
+
+.project-info h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    margin:10px;
+}
+
+.project-info h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0px;
+}
+
+.project-info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #d5a736;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 8px 15px;
+    margin: 0px 10px;
+    border-radius: 30px
+}
+
+.project-info a:hover {
+    color: #018abd;
+}
+
+.project-photo img {
+    width: 400px;
+    height: 400px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.projects ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    float: left;
+}
+
+.projects button {   
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.projects button:hover {
+    color: #018abd;
+}
+
+#trivia {
+    float: left;
+}
+
+#trivia h2 {
+    font-weight: 100;
+}
+
+#trivia button {
+    font-size: 18px;
+}
+
+#trivia h1 {
+    font-size: 35px;
+    line-height: 1em;
+}
+
+#trivia-answers {
+    color: #fff;
+    font-size: 20px;
+    max-width: 500px;
+    height: 400px;
+    float: right;
+}
+
+#trivia-image {
+    width: 400px;
+    height: 300px;
+    display: none;
 }
 
 #contacts-footer { 
@@ -123,15 +252,27 @@ body {
 #contacts-footer a {
     text-decoration: none;
     color: #fff;
-    font-size: 30px;
+    font-size: 35px;
     padding-right: 50px;
-    padding-top: 10px;
+    padding-top: 15px;
     display: inline-block;
 }
+
+#contacts-footer a:hover {
+    color: #64B6FF;
+}
+
 
 button {
     text-decoration: none;
     color: #d5a736;
+    background-color: #fff;
     border: 1px solid transparent;
     border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #018abd;
 }
