@@ -3,7 +3,7 @@
 body {
     background-color: #64B6FF;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
     font-size: 16px;
     line-height: 1.6em;
     margin: 0;
@@ -19,6 +19,73 @@ body {
     clear: both;
 }
 
+/* Add ons from week 2 and 3 */
+.add-ons{
+    background-color: #07ade9;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.view-count {
+    float: left; 
+}
+
+.view-count ul {
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+    display: inline;
+}
+
+.view-count li {
+    display: inline;
+}
+
+.view-count a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#show-views {
+    display: none;
+}
+
+.view-count a:hover {
+    color: #018abd;
+}
+
+.languages {
+    float: right;
+}
+
+.languages ul {
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+}
+
+.languages li {
+    display: inline;
+}
+
+.languages a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+
+.languages a:hover {
+    color: #018abd;
+}
+
+/*Navigation bar for each section*/
 #navbar { 
     background-color: #018abd;
     color: white;
@@ -37,7 +104,7 @@ body {
 #navbar a {
     text-decoration: none;
     color: #fff;
-    font-size: 18;
+    font-size: 18px;
     padding-right: 50px;
     letter-spacing: 2px;
 }
@@ -46,6 +113,7 @@ body {
     color: #64B6FF;
 }
 
+/*Welcome area */
 #Welcome {
     min-height: 300px;
     margin-bottom: 30px;
@@ -61,9 +129,20 @@ body {
 #Welcome h2 {
     font-size: 30px;
     line-height: 1em;
-    letter-spacing: 1px;  
+    letter-spacing: 1px;
+    display: inline-block;   
 }
 
+.giffy {
+    width: 100%;
+    height: 400px;
+    background-image: url('images/ponyo.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/*About section*/
 #About-photo {
     float: left;
     width: 40%;
@@ -81,10 +160,18 @@ body {
     float: right;
     width: 60%;
     background-color: #018abd;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 20px;
+    box-sizing: border-box; 
 }
 
+#About-info h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#About-info p {
+    display: inline-block
+}
 @media(max-width: 1200px) {
     #About-photo {
         width: 100%;
@@ -95,10 +182,124 @@ body {
     #About-info {
         width: 100%;
         float: none;
+    }
+    .giffy {
+        width: 100%;
+    }
+    #projects {
+        float:none;
+        text-align: center;
+        display:inline-block;
+    }
+    h1{
         text-align: center;
     }
 }
 
+/*Projects section*/
+#projects {
+    text-align: center;
+    display: inline-flex;
+    padding-left: 100px;
+}
+
+.project-info {
+    width: 500px;
+    height: 400px;
+    background-color: #018abd;
+    margin: 0px 20px;
+    float: left;
+}
+
+.project-info h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    margin:10px;
+}
+
+.project-info h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0px;
+}
+
+.project-info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #d5a736;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 8px 15px;
+    margin: 0px 10px;
+    border-radius: 30px
+}
+
+.project-info a:hover {
+    color: #018abd;
+}
+
+.project-photo img {
+    width: 400px;
+    height: 400px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.projects ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    float: left;
+}
+
+.projects button {   
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.projects button:hover {
+    color: #018abd;
+}
+
+/*Trivia section*/
+#trivia {
+    float: left;
+}
+
+#trivia h2 {
+    font-weight: 100;
+}
+
+#trivia button {
+    font-size: 18px;
+}
+
+#trivia h1 {
+    font-size: 35px;
+    line-height: 1em;
+}
+
+#trivia-answers {
+    color: #fff;
+    font-size: 20px;
+    max-width: 500px;
+    height: 400px;
+    float: right;
+}
+
+#trivia-image {
+    width: 400px;
+    height: 300px;
+    display: none;
+}
+
+/*Contacts section*/
 #contacts-footer { 
     background-color: #018abd;
     color: white;
@@ -123,15 +324,27 @@ body {
 #contacts-footer a {
     text-decoration: none;
     color: #fff;
-    font-size: 30px;
+    font-size: 35px;
     padding-right: 50px;
-    padding-top: 10px;
+    padding-top: 15px;
     display: inline-block;
 }
 
+#contacts-footer a:hover {
+    color: #64B6FF;
+}
+
+/*General characteristics of buttons*/
 button {
     text-decoration: none;
     color: #d5a736;
+    background-color: #fff;
     border: 1px solid transparent;
     border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #018abd;
 }
