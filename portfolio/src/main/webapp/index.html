@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <script src="script.js"></script>
   </head>
-  <body onload="getProjectInfo(1)">
+  <body onload="getProjectInfo(1); addServerViews();">
+    <div class="add-ons">
+            <div class="view-count">
+                <ul>
+                    <li style="margin-left: 10px;">
+                        <a onclick="showServerViews()">Views: </a></li>
+                    <li id="show-views"></li>
+                </ul>
+            </div>
+            <div class="languages">
+            
+                <ul>
+                    <li><a href="">ENG</a></li>
+                    <li><a href="">ESP</a></li>
+                    <li style="margin-right: 10px;">
+                        <a href="">HEB</a></li>
+                </ul>
+            </div>
+        </div>
         <nav id="navbar">
             <div class="container">
                 <ul>
@@ -53,12 +71,12 @@
         <div class="container" >
             <section class="projects" id="project-section">
                 <h1 >Projects:</h1>
-                <div id="projects" ></div>
                 <ul>
                     <li><button id="project-1" onClick="getProjectInfo(1)">1</button></li>
                     <li><button id="project-1" onClick="getProjectInfo(2)">2</button></li>
                     <li><button id="project-1" onClick="getProjectInfo(3)">3</button></li>
                 </ul>
+                <div id="projects" ></div>
             </section>
         </div>
         <div class="clr"></div>
@@ -94,5 +112,6 @@
                         <i class="fab fa-instagram"></i></a></li>
                 </ul>
             </footer>
+
     </body>
 </html>

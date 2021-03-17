@@ -19,6 +19,73 @@ body {
     clear: both;
 }
 
+/* Add ons from week 2 and 3 */
+.add-ons{
+    background-color: #07ade9;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.view-count {
+    float: left; 
+}
+
+.view-count ul {
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+    display: inline;
+}
+
+.view-count li {
+    display: inline;
+}
+
+.view-count a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#show-views {
+    display: none;
+}
+
+.view-count a:hover {
+    color: #018abd;
+}
+
+.languages {
+    float: right;
+}
+
+.languages ul {
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+}
+
+.languages li {
+    display: inline;
+}
+
+.languages a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+
+.languages a:hover {
+    color: #018abd;
+}
+
+/*Navigation bar for each section*/
 #navbar { 
     background-color: #018abd;
     color: white;
@@ -37,7 +104,7 @@ body {
 #navbar a {
     text-decoration: none;
     color: #fff;
-    font-size: 18;
+    font-size: 18px;
     padding-right: 50px;
     letter-spacing: 2px;
 }
@@ -46,6 +113,7 @@ body {
     color: #64B6FF;
 }
 
+/*Welcome area */
 #Welcome {
     min-height: 300px;
     margin-bottom: 30px;
@@ -74,6 +142,7 @@ body {
     background-position: center;
 }
 
+/*About section*/
 #About-photo {
     float: left;
     width: 40%;
@@ -127,6 +196,7 @@ body {
     }
 }
 
+/*Projects section*/
 #projects {
     text-align: center;
     display: inline-flex;
@@ -197,6 +267,7 @@ body {
     color: #018abd;
 }
 
+/*Trivia section*/
 #trivia {
     float: left;
 }
@@ -228,6 +299,7 @@ body {
     display: none;
 }
 
+/*Contacts section*/
 #contacts-footer { 
     background-color: #018abd;
     color: white;
@@ -262,7 +334,7 @@ body {
     color: #64B6FF;
 }
 
-
+/*General characteristics of buttons*/
 button {
     text-decoration: none;
     color: #d5a736;

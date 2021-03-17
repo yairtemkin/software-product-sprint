@@ -12,8 +12,44 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+function requestTranslation(languageCode){
+    /* 
+    const resultContainer = document.getElementById('');
+    resultContainer.innerText = 'Loading...';
 
+    const params = new URLSearchParams();
+    params.append('text', text);
+    params.append('languageCode', languageCode);
 
+    fetch('/translate', {
+        method: 'POST',
+        body: params
+    }).then(response => response.text())
+    .then((translatedMessage) => {
+        resultContainer.innerText = translatedMessage;
+    }); */
+}
+
+async function addServerViews() {
+    const responseFromServer = await fetch('/viewCount');
+    const textFromResponse = await responseFromServer.text();
+    
+    document.getElementById('show-views').innerHTML = textFromResponse;
+}
+
+var show = true;
+function showServerViews() {
+    if(show){
+        document.getElementById('show-views').style.display =  "inline";
+        show = !show;
+    }
+    else{
+        document.getElementById('show-views').style.display =  "none";
+        show = !show;
+    }
+}
+
+var index = 0;
 function addRandomTrivia() {
     const yairFacts =
         ["I am the youngest of 4!", "I am a Tech cabinet member in SHPE UF!", 
@@ -24,10 +60,6 @@ function addRandomTrivia() {
         const factImages = ["images/Wedding-photo.jpg","images/shpe.jpg",
          "images/myanmar.jpg", "images/totoro.gif", "images/UruguayPhoto.png",
          "images/stitch.gif"]
-        
-        
-    // Pick a random fact.
-    var index = Math.floor(Math.random() * yairFacts.length);
 
     // Add it to the page.
     document.getElementById('trivia-h').innerHTML = yairFacts[index];
@@ -35,6 +67,11 @@ function addRandomTrivia() {
     var myImage = document.getElementById('trivia-image');
     myImage.setAttribute("src", factImages[index]);
     myImage.style.display = 'block';
+
+    index++;
+    if(index > yairFacts.length -1){
+        index =0;
+    }
 
 }
 function getProjectInfo(number) {
