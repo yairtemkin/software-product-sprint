@@ -12,22 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-function requestTranslation(languageCode){
-    /* 
-    const resultContainer = document.getElementById('');
-    resultContainer.innerText = 'Loading...';
-
-    const params = new URLSearchParams();
-    params.append('text', text);
-    params.append('languageCode', languageCode);
-
-    fetch('/translate', {
-        method: 'POST',
-        body: params
-    }).then(response => response.text())
-    .then((translatedMessage) => {
-        resultContainer.innerText = translatedMessage;
-    }); */
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
 }
 
 async function addServerViews() {
